@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+.container h1, .container h2 {
+    margin-bottom: 20px;
+}
