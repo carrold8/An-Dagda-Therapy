@@ -54,9 +54,25 @@
 
                 <!-- Form -->
                 <h2 class="mb-4">Send a Message</h2>
-                <p>For bookings, availability, or general questions, please fill out the form below or email directly: <a href="mailto:myles@andagdatherapy.com">myles@andagdatherapy.com</a></p>
+                <p>For bookings, availability, or general questions, please fill out the form below or email directly: 
+                    <a href="mailto:myles@andagdatherapy.com">myles@andagdatherapy.com</a>
+                </p>
 
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="p-4 shadow-sm rounded bg-white">
+                <!-- UPDATED FORM USING FORMSUBMIT -->
+                <form action="https://formsubmit.co/a1c52b2c75da2e42472448005f7c9ad5" method="POST" class="p-4 shadow-sm rounded bg-white">
+
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="_honey" style="display:none">
+
+                    <!-- Disable CAPTCHA -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Redirect after success -->
+                    <input type="hidden" name="_next" value="https://andagdatherapy.com/contact/thank-you">
+
+                    <!-- Email subject -->
+                    <input type="hidden" name="_subject" value="New Contact Form Submission">
+
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
@@ -75,12 +91,15 @@
                     <div class="text-center">
                         <button type="submit" class="btn btn-success btn-lg">Send Message</button>
                     </div>
+
                 </form>
 
                 <!-- Additional Info -->
                 <div class="mt-5">
                     <h2>Stay Connected</h2>
-                    <p>Follow on Instagram for updates on new course dates, workshops, and announcements: <a href="https://instagram.com/andagdatherapy" target="_blank">@andagdatherapy</a></p>
+                    <p>Follow on Instagram for updates on new course dates, workshops, and announcements: 
+                        <a href="https://instagram.com/andagdatherapy" target="_blank">@andagdatherapy</a>
+                    </p>
 
                     <h2>Location</h2>
                     <p>Sessions available online and in-person in the Meath, Louth, and North Dublin areas. I’ll get back to you as soon as possible. Looking forward to connecting with you.</p>
